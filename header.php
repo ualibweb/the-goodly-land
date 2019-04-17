@@ -16,6 +16,6 @@
   </head>
   <body>
     <header>
-      <h1>The Goodly Land</h1>
+      <h1><?php bloginfo( 'name' ); ?></h1>
       <?php wp_nav_menu( array( 'theme_location' => 'navigation-menu' ) ); ?>
     </header>
