@@ -17,4 +17,5 @@
   <body>
     <header>
       <h1>The Goodly Land</h1>
+      <?php wp_nav_menu( array( 'theme_location' => 'navigation-menu' ) ); ?>
     </header>
