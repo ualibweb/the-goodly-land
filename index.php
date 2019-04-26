@@ -5,14 +5,10 @@
 
 get_header();
 
-if ( have_posts() ) :
-  while ( have_posts() ) :
+if (have_posts()) :
+  while (have_posts()) :
     the_post();
-?>
-
-    <h2><?php the_title(); ?></h2>
-
-<?php
+    echo '<h2>' . the_title() . '</h2>';
     the_content();
   endwhile;
 endif;

@@ -1,2 +1,3 @@
-# the-goodly-land
-the WordPress theme for "The Goodly Land" site
+# this-goodly-land
+
+The WordPress theme for University of Alabama Libraries' This Goodly Land site.
