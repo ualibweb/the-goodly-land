@@ -38,7 +38,7 @@ if ($dbError) {
   echo '<ul>';
 
   while ($row = $res->fetch_assoc()) {
-    echo '<li><a href="/author?/AuthorID=' . $row['AuthorID'] . '">' . $row['AuthorTitle'] . '</a></li>';
+    echo '<li><a href="' . home_url('/author?AuthorID=' . $row['AuthorID']) . '">' . $row['AuthorTitle'] . '</a></li>';
   }
 
   echo '</ul>';
