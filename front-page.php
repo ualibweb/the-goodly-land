@@ -79,7 +79,7 @@ if ($mysqli->connect_errno) {
   </form>
   <?php
   if ($dbError) {
-    echo '<p>' . $otdError . '</p>';
+    echo '<p>' . $dbError . '</p>';
   } elseif ($res->num_rows > 0) {
     echo '<ul>';
 
