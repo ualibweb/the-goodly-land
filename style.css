@@ -14,6 +14,11 @@ body {
   font-family: helvetica, arial, sans-serif;
 }
 
+footer {
+  font-size: 0.75em;
+  text-align: center;
+}
+
 h1 {
   text-align: center;
 }
@@ -23,9 +28,31 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 5px;
 }
 
-footer {
-  font-size: 0.75em;
-  text-align: center;
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+.author-h3 {
+  display: inline-block;
+}
+
+.author-img {
+  float: right;
+  margin: 0px 0px 20px 20px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 #on-this-day {
@@ -45,10 +72,6 @@ footer {
   color: #fff;
   margin: 0px;
   padding: 5px 10px;
-}
-
-#on-this-day ul li {
-  margin-bottom: 5px;
 }
 
 #on-this-day p {
