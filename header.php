@@ -14,8 +14,9 @@
     <?php wp_head(); ?>
   </head>
   <body>
-    <div id="page">
-      <header>
-        <h1><?php bloginfo('name'); ?></h1>
-        <?php wp_nav_menu(array('theme_location' => 'navigation-menu')); ?>
-      </header>
+    <div id="page-wrapper">
+      <div id="page">
+        <header>
+          <h1><?php bloginfo('name'); ?></h1>
+          <?php wp_nav_menu(array('theme_location' => 'navigation-menu')); ?>
+        </header>
