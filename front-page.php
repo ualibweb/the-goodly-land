@@ -84,7 +84,7 @@ if ($mysqli->connect_errno) {
     echo '<ul>';
 
     while ($row = $res->fetch_assoc()) {
-      echo '<li>' . str_replace('http://media.cla.auburn.edu/goodlyland/author.cfm', '/author', $row['Description']) . '</li>';
+      echo '<li>' . str_replace('http://media.cla.auburn.edu/goodlyland/author.cfm', 'author', $row['Description']) . '</li>';
     }
 
     echo '</ul>';
