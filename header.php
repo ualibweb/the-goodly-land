@@ -17,6 +17,9 @@
     <div id="page-wrapper">
       <div id="page">
         <header>
-          <h1><?php bloginfo('name'); ?></h1>
+          <h1>
+            <img alt="" src="<?php echo get_template_directory_uri(); ?>/images/heading.jpg" />
+            <span class="no-display"><?php bloginfo('name'); ?></span>
+          </h1>
           <?php wp_nav_menu(array('theme_location' => 'navigation-menu')); ?>
         </header>
