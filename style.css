@@ -92,6 +92,14 @@ ul li {
   display: none;
 }
 
+#literary-map {
+  display: none;
+}
+
+#no-map-message {
+  font-weight: bold;
+}
+
 #on-this-day {
   border: 1px solid #000;
 }
@@ -128,4 +136,14 @@ ul li {
   max-width: 900px;
   position: relative;
   width: 75%;
+}
+
+@media (min-width: 1200px) {
+  #literary-map {
+    display: block;
+  }
+
+  #no-map-message {
+    display: none;
+  }
 }

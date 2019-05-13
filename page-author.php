@@ -254,8 +254,6 @@ if ($mysqli->connect_errno) {
   }
 }
 
-// FIXME: Set the title of the page to be the author's name.
-
 get_header();
 
 if ($dbError) {
