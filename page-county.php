@@ -3,19 +3,19 @@
  * The county page template.
  */
 
+ // Connect to the database.
+ include 'config.php';
+ $mysqli = new mysqli($dbConfig['host'], $dbConfig['user'], $dbConfig['password'], $dbConfig['database']);
+
  // Get the GET var.
  $countyName = $_GET['CountyName'];
 
  // Validate and sanitize the GET var.
  if (isset($countyName) && !empty($countyName)) {
-   $countyName = mysql_real_escape_string(strip_tags(trim($countyName)));
+   $countyName = $mysqli->real_escape_string(strip_tags(trim($countyName)));
  } else {
    header('Location: ' . home_url('/county-list/'));
  }
-
- // Connect to the database.
- include 'config.php';
- $mysqli = new mysqli($dbConfig['host'], $dbConfig['user'], $dbConfig['password'], $dbConfig['database']);
 
  /* Check if the connection was successful. If not, create and store an
  error message. Otherwise, query the database. */
